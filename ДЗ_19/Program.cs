@@ -12,7 +12,7 @@ int[] array = new int[5];
 Console.Write("Введите пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 4; i >= 0; i = i - 1) 
+for (int i = array.Length - 1; i >= 0; i--) 
 {
     array[i] = num % 10; 
     num /= 10;
